@@ -44,20 +44,26 @@ var buildOscillatorGainMeter = function(osc) {
 var buildOscillatorOctaveControl = function(osc) {
     var html = "";
     html += '<div class="oscillatorOctaveContainer">';
-    html +=     '<label class="oscillatorOctaveLabel">oct</label>';
-    html +=     '<button type="button" onclick="decreaseOscillatorOctave('+osc+')">-</button>';
-    html +=     '<button type="button" onclick="increaseOscillatorOctave('+osc+')">+</button>';
-    html +=     '<input class="octaveDisplayer" id="osc'+osc+'OctaveDisplay" type="text"  disabled>';
+    html += '   <div class="oscillatorOctaveContainer-row">';
+    html +=         '<label class="oscillatorOctaveLabel">oct</label>';
+    html +=         '<button type="button" onclick="decreaseOscillatorOctave('+osc+')">-</button>';
+    html +=         '<button type="button" onclick="increaseOscillatorOctave('+osc+')">+</button>';
+    html +=         '<input class="octaveDisplayer" id="osc'+osc+'OctaveDisplay" type="text"  disabled>';
+    html +=     '</div>';
+
     //html +=     '<label class="oscillatorOctaveLabel">-1</label>';
-    html += '   <div class="powerButton">';
-    html += '     <input id="osc'+osc+'OctaveDown" type="checkbox" name="osc'+osc+'" onchange="setOscillatorOctaveDown('+osc+')">';
-    html += '     <label for="osc'+osc+'OctaveDown"><span></span></label>';
-    html += '   </div>';
-    html +=     '<label class="oscillatorOctaveLabel">-Oct+</label>';
+    html += '   <div class="oscillatorOctaveContainer-row">';
+
+    html += '       <div class="powerButton">';
+    html += '           <input id="osc'+osc+'OctaveDown" type="checkbox" name="osc'+osc+'" onchange="setOscillatorOctaveDown('+osc+')">';
+    html += '           <label for="osc'+osc+'OctaveDown"><span></span></label>';
+    html += '       </div>';
+    html +=         '<label class="oscillatorOctaveLabel2">- oct +</label>';
     //html += '   <label class="oscillatorOctaveLabel">+1</label>';
-    html += '   <div class="powerButton">';
-    html += '     <input id="osc'+osc+'OctaveUp" type="checkbox" name="osc'+osc+'" onchange="setOscillatorOctaveUp('+osc+')">';
-    html += '     <label for="osc'+osc+'OctaveUp"><span></span></label>';
+    html += '       <div class="powerButton">';
+    html += '           <input id="osc'+osc+'OctaveUp" type="checkbox" name="osc'+osc+'" onchange="setOscillatorOctaveUp('+osc+')">';
+    html += '           <label for="osc'+osc+'OctaveUp"><span></span></label>';
+    html += '       </div>';
     html += '   </div>';
     html += '</div>';
 
@@ -67,6 +73,8 @@ var buildOscillatorOctaveControl = function(osc) {
 var buildOscillatorDetuneControl = function(osc) {
     var html = "";
     html += '<div id="detuneContainer">';
+    html += '<label style="font-size: 10px; font-weight: bold; padding-top: 3px;">tune</label>';
+
     html += '<input class="detuneDisplayer" id="osc'+osc+'DetuneDisplay" type="text"  disabled>';
     html += '<input title="Detune" id="osc'+osc+'DetuneFader" class="detuneFader" type="range" min="-100" max="100" step="1" ondblclick="resetOscillatorDetuneValue('+osc+')" oninput="setOscillatorDetuneValue('+osc+',this.value)" value="0">';
     html += '</div>';
@@ -76,7 +84,7 @@ var buildOscillatorDetuneControl = function(osc) {
 var buildOscillatorEnvelopeControl = function(osc) {
     var html = "";
     html += '<div id="envlopeContainer">';
-    html += '   <label>env</label>';
+    html += '   <label style="font-size: 12px; font-weight: bold; padding-top: 5px; padding-right:5px;">env</label>';
     html += '   <div id="envelopeSendDisplay" onclick="changeEnvelopeSend('+osc+')">';
     html += '       <input class="envelopeSendDisplay" id="envelope'+osc+'SendDisplayer" type="text" disabled value="off">';
     html += '   </div>';
@@ -87,7 +95,7 @@ var buildOscillatorEnvelopeControl = function(osc) {
 var buildOscillatorFilterControl = function(osc) {
     var html = "";
     html += '<div id="FilterContainer">';
-    html += '   <label>Filter</label>';
+    html += '   <label style="font-size: 12px; font-weight: bold; padding-top: 5px; padding-right:5px; margin-left: 10px;">filter</label>';
     html += '   <div id="filterSendDisplay" onclick="changeFilterSend('+osc+')">';
     html += '       <input class="filterSendDisplay" id="filter'+osc+'SendDisplayer" type="text" disabled value="off">';
     html += '   </div>';
@@ -164,11 +172,11 @@ var buildFilter = function() {
     html += '    <canvas id="filterCanvas" width="100" height ="50"></canvas>';
     html += '    <div id="filterFreqSliders">';
     html += '       <label id="filterFLabel">F</label>';
-    html += '       <input id="frequencySlider" title="Frequency" type="range" min="0" max="2000" value="1000" />';
+    html += '       <input id="frequencySlider" class="detuneFader" title="Frequency" type="range" min="0" max="2000" value="1000" />';
     html += '       <label id="filterQLabel">Q</label>';
-    html += '       <input id="qSlider" title="Q" type="range" min="1" max="100" value="10" />';
+    html += '       <input id="qSlider" title="Q" type="range" class="detuneFader" min="1" max="100" value="10" />';
     html += '       <label id="filterGLabel">G</label>';
-    html += '       <input id="gainSlider" title="Gain" disabled type="range" min="1" max="100" value="20" />';
+    html += '       <input id="gainSlider" title="Gain" disabled class="detuneFader" type="range" min="1" max="100" value="20" />';
     html += '    </div>';
     html += '</div>';
     return html;
@@ -181,7 +189,14 @@ var buildKeyboard = function() {
         html += '   <div id='+key+' class='+getKeyColor(key)+' onmousedown="playNote(this.id,true)" onmouseup="stopNote(this.id)" onmouseout="stopNote(this.id)" onmouseover="playNote(this.id,false)"></div>';
     });
     html += '</div>';
-    html += '<input id="masterFader" type="range" min="0" max="1" step="0.01" oninput="setVolume(this.value)" value="0.5">';
+
+    
+    html += '<div class="oscillatorGainContainer">';
+    html +=     '<input id="masterFader" class="oscillatorFader" type="range" min="0" max="1" step="0.01" oninput="setVolume(this.value)" value="0.5">';
+    html += '</div>';
+    
+
+    /*html += '<input id="masterFader" type="range" min="0" max="1" step="0.01" oninput="setVolume(this.value)" value="0.5">'; */
     return html;
 };
 
@@ -204,7 +219,8 @@ var getKeyColor = function(key) {
     html += '</div>';
     html += buildADSR();
     html += buildFilter();
-    html += buildKeyboard();
+    if(!isMobile)
+        html += buildKeyboard();
 
     el.innerHTML += html;
 })();

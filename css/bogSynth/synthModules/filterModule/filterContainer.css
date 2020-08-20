@@ -1,5 +1,7 @@
 #filterContainer {
-    background-color: beige;
+    /*background-color: beige; */
+    background-color: #a7a7a7;
+
     width: 266px;
     height: 67px;
     margin: 5px;
@@ -55,12 +57,12 @@
     width: 80px;
     top: 20px;
 }
-
+/* OLD
 #gainSlider {
-   //left: 70px;
+   /*left: 70px; *
     width: 80px;
     top: 40px;
-}
+}*/
 
 #filterFLabel {
     left: -12px;
@@ -75,3 +77,49 @@
     left: -12px;
     top:45px;
 }
+
+/*
+
+/* NEW SLIDER */
+.oscillatorGainContainer {
+    width: 100%;
+  }
+
+
+  .gainFader {
+    -webkit-appearance: none;
+    width: 100%;
+    /*height: 25px;*/
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 12px !important;
+    margin-bottom: 12px;
+  }
+  
+  .gainFader:hover {
+    opacity: 1;
+  }
+  
+  .gainFader::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 25px;
+    background: #4CAF50;
+    border: 1px solid black;
+
+    cursor: pointer;
+  }
+  
+  .gainFader::-moz-range-thumb {
+    width: 10px;
+    height: 25px;
+    background: #4CAF50;
+    border: 1px solid black;
+
+    cursor: pointer;
+  }

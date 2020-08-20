@@ -3,6 +3,8 @@
 <head>
 	<title>BogSynth</title>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.4, maximum-scale=1.0, user-scalable=0"> 
+
 	<link rel="shortcut icon" href="bogSynthIcon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/bogSynth/synthModules/keyBoard.css">
 	<link rel="stylesheet" type="text/css" href="css/bogSynth/synthModules/oscillatorModule/oscillatorGainContainer.css">
@@ -15,6 +17,9 @@
 	<link rel="stylesheet" type="text/css" href="css/bogSynth/synthModules/filterModule/filterContainer.css">
 	<link rel="stylesheet" type="text/css" href="css/bogSynth/bogSynth.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet" type="text/css" href="css/bogSynth/mobileKeyboard.css">
+
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
@@ -23,6 +28,9 @@
   });
 </script>
 </head>
+<script src="./scripts/mobile/mobileCheck.js"></script>
+
+
 <div id="bogSynth">
 	<script src="./scripts/audioApi.js"></script>
 	<script src="./scripts/bogSynthBuilder.js"></script>
@@ -36,7 +44,34 @@
 	<script src="./scripts/voiceController.js"></script>
 	<script src="./scripts/volumeController.js"></script>
 	<script src="./scripts/octaveController.js"></script>
-
+	<img id="help_gif"  src="data/images/bogsynth_help2.gif">
 </div>
+<div id="mobileKeyboardScales">
+	
+</div>
+
+<div id="mobileKeyboard">
+	<div id="m65" class="mobileKeyboardKey W"  ontouchstart="playNote(65,true)" ontouchend="stopNote(65)"></div>
+	<div id="m87" class="mobileKeyboardKey B"  ontouchstart="playNote(87,true)" ontouchend="stopNote(87)"></div>
+	<div id="m83" class="mobileKeyboardKey W"  ontouchstart="playNote(83,true)" ontouchend="stopNote(83)"></div>
+	<div id="m69" class="mobileKeyboardKey B"  ontouchstart="playNote(69,true)" ontouchend="stopNote(69)"></div>
+	<div id="m68" class="mobileKeyboardKey W"  ontouchstart="playNote(68,true)" ontouchend="stopNote(68)" ></div>
+	<div id="m70" class="mobileKeyboardKey W"  ontouchstart="playNote(70,true)" ontouchend="stopNote(70)" ></div>
+	<div id="m84" class="mobileKeyboardKey B"  ontouchstart="playNote(84,true)" ontouchend="stopNote(84)" ></div>
+	<div id="m71" class="mobileKeyboardKey W"  ontouchstart="playNote(71,true)" ontouchend="stopNote(71)" ></div>
+	<div id="m89" class="mobileKeyboardKey B"  ontouchstart="playNote(89,true)" ontouchend="stopNote(89)" ></div>
+	<div id="m72" class="mobileKeyboardKey W"  ontouchstart="playNote(72,true)" ontouchend="stopNote(72)" ></div>
+	<div id="m85" class="mobileKeyboardKey B"  ontouchstart="playNote(85,true)" ontouchend="stopNote(85)" ></div>
+	<div id="m74" class="mobileKeyboardKey W"  ontouchstart="playNote(74,true)" ontouchend="stopNote(74)" ></div>
+	<div id="m75" class="mobileKeyboardKey W"  ontouchstart="playNote(75,true)" ontouchend="stopNote(75)" ></div>
+	<div id="m79" class="mobileKeyboardKey B"  ontouchstart="playNote(79,true)" ontouchend="stopNote(79)" ></div>
+	<div id="m76" class="mobileKeyboardKey W"  ontouchstart="playNote(76,true)" ontouchend="stopNote(76)" ></div>
+	<div id="m80" class="mobileKeyboardKey B"  ontouchstart="playNote(80,true)" ontouchend="stopNote(80)" ></div>
+	<div id="m192" class="mobileKeyboardKey W"  ontouchstart="playNote(192,true)" ontouchend="stopNote(192)" ></div>
+	<div id="m222" class="mobileKeyboardKey W"  ontouchstart="playNote(222,true)" ontouchend="stopNote(222)" ></div>
+</div>
+
+<script src="./scripts/mobile/mobileScales.js"></script>
+
 </body>
 </html>

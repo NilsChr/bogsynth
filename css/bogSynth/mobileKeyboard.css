@@ -1,0 +1,73 @@
+#mobileKeyboard {
+    position: fixed;
+    width: 100% !important;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    overflow: visible;
+    display: flex;
+}
+
+.mobileKeyboardKey {
+    flex: 1;
+
+    /*width: 5.5%; */
+    height: 100%;
+    border: 1px solid black;
+    float: left;
+}
+
+.W {
+    background-color: whitesmoke;
+}
+
+.B {
+    background-color: grey;
+}
+
+.off {
+    display: none;
+}
+
+#mobileKeyboardScales {
+    position: fixed;
+    width: 100% !important;
+    height: 10%;
+    bottom: 35%;
+    left: 0;
+    overflow: visible;
+    display: flex;
+}
+.mobileKeyboardScalesBtn {
+    flex: 1;
+    height: 100%;
+    border-radius: 13px;
+    margin: 15px;
+    background-color: #5f5f5f;
+    display: inline-block;
+    position: relative;
+
+}
+
+.scaleTitle {
+    /*
+    display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 26px;
+  */
+
+  font-size: 26px;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scaleActive {
+    color: #FFF !important;
+    background-color: rgb(130, 180, 203);
+
+}

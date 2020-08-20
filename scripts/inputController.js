@@ -29,8 +29,13 @@ body.onmouseup = function() {
 }
 
 var playNote = function(input, clicked) {
-    if(mouseDown || clicked)
+    if(isMobile) {
         playVoice(input);
+    } else {
+        if(mouseDown || clicked)
+        playVoice(input);
+    }
+
 }
 
 var stopNote = function(input) {

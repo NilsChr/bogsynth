@@ -1,11 +1,14 @@
 #adsrContainer {
-    background-color: beige;
+    /*background-color: beige; */
+    background-color: #a7a7a7;
+
     width: 266px;
     height: 67px;
     margin: 5px;
     padding: 10px;
     border: 2px solid #444444;
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    
 }
 
 #adsrContainer #adsrPowerButtons {
@@ -24,6 +27,7 @@
 #adsrContainer .smallGainContainer {
     width: 44px;
     height: 84px;
+    padding-top:5px;
 }
 
 #adsrContainer .smallGainContainer * {

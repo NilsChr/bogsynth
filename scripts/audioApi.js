@@ -28,6 +28,7 @@ var masterVolume = 0.5;
 var octave = 0;
 
 var changeStylePress = function (keyIn) {
+	if(isMobile) return;
 	var key = document.getElementById(keyIn);
 	if (key.className === "wUp")
 		key.className = "wDown";
@@ -36,6 +37,8 @@ var changeStylePress = function (keyIn) {
 }
 
 var changeStyleRelease = function (keyIn) {
+	if(isMobile) return;
+
 	var key = document.getElementById(keyIn);
 	if (key.className === "wDown")
 		key.className = "wUp";

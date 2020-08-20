@@ -1,3 +1,4 @@
+/*
 #detuneContainer {
     margin-top: 10px;
 }
@@ -5,9 +6,66 @@
 .detuneFader {
     width: 50px;
 }
-
+*/
 .detuneDisplayer {
-    width: 20px;
+    width: 30px;
+    padding-left: 5px;
     background-color: transparent;
     border:none;
 }
+
+/* NEW SLIDER */
+#detuneContainer {
+  /*  height: 30px;*/
+
+    /*margin-top: 10px !important;
+    margin-bottom: 10px !important;*/
+
+    background-color: #a7a7a7;
+    /*margin-left: 150px;
+    /*width: 110%; */
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 2px;
+
+    width: 44%;
+    margin-left: 139px;
+    margin-bottom: 4px;
+
+
+  }
+  
+  .detuneFader {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    width: 50px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 5px;
+  }
+  
+  .detuneFader:hover {
+    opacity: 1;
+  }
+  
+  .detuneFader::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 15px;
+    background: #4CAF50;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  
+  .detuneFader::-moz-range-thumb {
+    width: 10px;
+    height: 15px;
+    background: #4CAF50;
+    border: 1px solid black;
+    cursor: pointer;
+  }

@@ -14,19 +14,21 @@
     -o-user-select: none;
     position: relative;
     width: 600px;
-    height: 400px;
-    //background-color: rgb(50,72,105);
+    height: 500px;
+    /*background-color: rgb(50,72,105); */
 
-    background: rgb(50,72,105);
+   /* background: rgb(50,72,105);
     background: -webkit-linear-gradient(top, rgb(50,72,105) 0%, rgb(100,122,155) 40%, rgb(50,72,105) 100%);
-    background: linear-gradient(top, rgb(50,72,105) 0%, rgb(100,122,155) 40%, rgb(50,72,105) 100%);;
-    //background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: linear-gradient(top, rgb(50,72,105) 0%, rgb(100,122,155) 40%, rgb(50,72,105) 100%); */
+    /*background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); */
+
+    background-color: #272d31;
 
     padding:50px;
     margin: auto;
     margin-top: 150px;
-//rgb(100,122,155);
-    border: 5px solid rgb(70,92,125);
+/*rgb(100,122,155);*/
+    border: 2px solid rgb(70,92,125);
 }
 
 #bogSynth * {
@@ -50,7 +52,6 @@
 
 #bogSynth>#logo {
     position: absolute;
-    imsmooth:never;
     left: 5px;
     top: 5px;
     width: 43px;
@@ -68,16 +69,24 @@ input[type="checkbox"] + label span {
     height: 16px;
     margin: 0px;
     background: #fcfff4;
-    background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border: 1px solid rgb(194, 194, 194);
+
+    /*background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
     background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);*/
 }
 input[type="checkbox"]:checked + label span {
     width: 16px;
     height: 16px;
     margin: 0px;
     background: #27ae60;
+    /*
     background: -webkit-linear-gradient(top, #27ae60 0%, #145b32 100%);
     background: linear-gradient(to bottom, #27ae60 0%, #145b32 100%);
     box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    */
+    /*
+    box-shadow: inset 0px 1px 1px rgb(30, 136, 30), 0px 1px 3px rgba(0, 0, 0, 0.5);*/
+    border: 1px solid rgb(48, 77, 46);
+
 }

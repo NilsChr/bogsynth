@@ -7,8 +7,21 @@
 */
 
 .oscillatorOctaveContainer {
-    width:84px;
-    height: 32px;
+    /*width:84px;
+    height: 32px;*/
+    width:100px;
+  /*  height: 32px; */
+    height: 55px;
+
+    background-color: #a7a7a7;
+    margin-left: 3px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.oscillatorOctaveContainer-row {
+    width: 140%;
 }
 
 .oscillatorOctaveContainer label{
@@ -17,6 +30,7 @@
 
 .oscillatorOctaveContainer .octaveDisplayer {
     width: 16px;
+    margin-left: 5px;
 }
 
 .oscillatorOctaveContainer button{
@@ -32,13 +46,26 @@
 }
 
 .oscillatorOctaveContainer .oscillatorOctaveLabel{
-    font-size: 15px;
+    font-size: 12px;
     margin:0;
-    padding-left: 5px;
-    padding-right:5px;
+    padding-left: 0px;
+    padding-right:18px;
+    padding-top:10px;
+    font-weight: bold;
 }
+
+.oscillatorOctaveContainer .oscillatorOctaveLabel2{
+    font-size: 12px;
+    margin:0;
+    padding-left: 9px;
+    padding-right:9px;
+    padding-top:10px;
+    font-weight: bold;
+}
+
 
 .oscillatorOctaveContainer .powerButton *{
     margin:0;
+    margin-top: 5px;
 }
 

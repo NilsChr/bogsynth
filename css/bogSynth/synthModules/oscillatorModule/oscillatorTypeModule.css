@@ -10,6 +10,14 @@
 .bogSynthOscillator .oscillatorButtonContainer {
     width: 64px;
     height: 64px;
+
+    /* NEW */
+    background-color: #a7a7a7;
+    margin-left: 3px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 2px;
+    
 }
 
 .bogSynthOscillator .oscillatorButtonContainer * {
