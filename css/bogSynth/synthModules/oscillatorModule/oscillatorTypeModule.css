@@ -1,0 +1,93 @@
+.bogSynthOscillator button {
+    width: 32px;
+    height:32px;
+    border:none;
+}
+.bogSynthOscillator button:hover {
+    cursor: pointer;
+}
+
+.bogSynthOscillator .oscillatorButtonContainer {
+    width: 64px;
+    height: 64px;
+}
+
+.bogSynthOscillator .oscillatorButtonContainer * {
+    float:left;
+    background-color: transparent;
+}
+
+#active1sine {
+    background-image: url("../../../../data/images/sineOn.png");
+}
+#inactive1sine {
+    background-image: url("../../../../data/images/sineOff.png");
+}
+#active1square {
+    background-image: url("../../../../data/images/squareOn.png");
+}
+#inactive1square {
+    background-image: url("../../../../data/images/squareOff.png");
+}
+#active1sawtooth {
+    background-image: url("../../../../data/images/sawOn.png");
+}
+#inactive1sawtooth {
+    background-image: url("../../../../data/images/sawOff.png");
+}
+#active1triangle {
+    background-image: url("../../../../data/images/triangleOn.png");
+}
+#inactive1triangle {
+    background-image: url("../../../../data/images/triangleOff.png");
+}
+
+#active2sine {
+    background-image: url("../../../../data/images/sineOn.png");
+}
+#inactive2sine {
+    background-image: url("../../../../data/images/sineOff.png");
+}
+#active2square {
+    background-image: url("../../../../data/images/squareOn.png");
+}
+#inactive2square {
+    background-image: url("../../../../data/images/squareOff.png");
+}
+#active2sawtooth {
+    background-image: url("../../../../data/images/sawOn.png");
+}
+#inactive2sawtooth {
+    background-image: url("../../../../data/images/sawOff.png");
+}
+#active2triangle {
+    background-image: url("../../../../data/images/triangleOn.png");
+}
+#inactive2triangle {
+    background-image: url("../../../../data/images/triangleOff.png");
+}
+
+#active3sine {
+    background-image: url("../../../../data/images/sineOn.png");
+}
+#inactive3sine {
+    background-image: url("../../../../data/images/sineOff.png");
+}
+#active3square {
+    background-image: url("../../../../data/images/squareOn.png");
+}
+#inactive3square {
+    background-image: url("../../../../data/images/squareOff.png");
+}
+#active3sawtooth {
+    background-image: url("../../../../data/images/sawOn.png");
+}
+#inactive3sawtooth {
+    background-image: url("../../../../data/images/sawOff.png");
+}
+#active3triangle {
+    background-image: url("../../../../data/images/triangleOn.png");
+}
+#inactive3triangle {
+    background-image: url("../../../../data/images/triangleOff.png");
+}

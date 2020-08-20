@@ -1,0 +1,44 @@
+/*
+*   StyleSheet for the Oscillator octave module
+*
+*   Components
+*   .oscillatorOctaveContainer: div containing the octave Controls.
+*   .octaveDisplayer          : the display.
+*/
+
+.oscillatorOctaveContainer {
+    width:84px;
+    height: 32px;
+}
+
+.oscillatorOctaveContainer label{
+    margin-right: 2px;
+}
+
+.oscillatorOctaveContainer .octaveDisplayer {
+    width: 16px;
+}
+
+.oscillatorOctaveContainer button{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.oscillatorOctaveContainer button{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.oscillatorOctaveContainer .oscillatorOctaveLabel{
+    font-size: 15px;
+    margin:0;
+    padding-left: 5px;
+    padding-right:5px;
+}
+
+.oscillatorOctaveContainer .powerButton *{
+    margin:0;
+}
+

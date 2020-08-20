@@ -1,0 +1,53 @@
+﻿.wUp {
+	background-color: white;
+	float: left;
+	width: 20px;
+	height:70px;
+	border: 1px solid black;
+}
+
+.wDown {
+	background-color: #555555;
+	float: left;
+	width: 20px;
+	height:70px;
+	border: 1px solid black;
+}
+
+.bUp {
+	background-color: black;
+	float: left;
+	width: 20px;
+	height:70px;
+	border: 1px solid black;
+}
+
+.bDown {
+	background-color: #555555;
+	float: left;
+	width: 20px;
+	height:70px;
+	border: 1px solid black;
+}
+
+.bogSynthOscillator {
+	margin: 5px;
+}
+
+#keyBoard {
+	position:absolute;
+	left: 55px;
+	top: 420px;
+}
+
+input[type="range"] {
+
+}
+
+#masterFader {
+	-webkit-transform: rotate(270deg);
+	position: absolute;
+	left: 445px;
+	top: 430px;
+	width: 50px;
+}

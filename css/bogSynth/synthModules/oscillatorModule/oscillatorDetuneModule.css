@@ -1,0 +1,13 @@
+#detuneContainer {
+    margin-top: 10px;
+}
+
+.detuneFader {
+    width: 50px;
+}
+
+.detuneDisplayer {
+    width: 20px;
+    background-color: transparent;
+    border:none;
+}

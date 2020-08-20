@@ -1,0 +1,77 @@
+#filterContainer {
+    background-color: beige;
+    width: 266px;
+    height: 67px;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #444444;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#filterContainer #filterPowerButtons {
+    width: 16px;
+    float: left;
+}
+
+#filterPowerButtons .powerButton {
+    margin-bottom: 5px;
+}
+
+#power1Button {
+    top: 0px;
+}
+#power2Button {
+    top: 20px;
+}
+#power3Button {
+     top: 40px;
+ }
+
+#filtersDropdown {
+    bottom: 8px;
+    right: 10px;
+}
+
+#filterContainer * {
+    position: absolute;
+}
+
+#filterCanvas {
+    right: 10px;
+}
+
+#filterFreqSliders {
+    height: 80px;
+    width: 80px;
+    left: 70px;
+}
+
+#frequencySlider {
+    width: 80px;
+}
+
+#qSlider {
+    width: 80px;
+    top: 20px;
+}
+
+#gainSlider {
+   //left: 70px;
+    width: 80px;
+    top: 40px;
+}
+
+#filterFLabel {
+    left: -12px;
+    top: 5px;
+}
+
+#filterQLabel {
+    left: -12px;
+    top:25px;
+}
+#filterGLabel {
+    left: -12px;
+    top:45px;
+}
